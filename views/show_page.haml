@@ -2,7 +2,7 @@
 -if @page.content
   =markdown @page.content
 %p
-  %a{href:"/pages/#{@page._id}/edit"}edit this song
+  %a{href:"/pages/#{@page._id}/edit"}edit this page
 %form{action:"/pages/#{@page._id}", method:"POST"}
   %input{type:"hidden", name:"_method", value:"DELETE"}
   %input{type:"submit", value:"delete this page"}  
