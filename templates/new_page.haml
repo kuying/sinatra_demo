@@ -1,0 +1,6 @@
+%h1 Add A New Page
+%form{method:"POST", action:"/pages"}
+  %fieldset
+    %lenend Crete a new page
+    = haml :page_form
+  %input{type:"submit", value:"Create"}

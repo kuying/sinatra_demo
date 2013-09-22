@@ -1,0 +1,8 @@
+%h1=@page.title
+-if @page.content
+  =markdown @page.content
+%p
+  %a{href:"/pages/#{@page._id}/edit"}edit this song
+%form{action:"/pages/#{@page._id}", method:"POST"}
+  %input{type:"hidden", name:"_method", value:"DELETE"}
+  %input{type:"submit", value:"delete this page"}  
