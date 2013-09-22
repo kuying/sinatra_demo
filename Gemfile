@@ -8,7 +8,7 @@ gem 'mongoid'
 
 gem 'kramdown'
 
-# gem 'unicorn'
+gem 'thin'
 # group :development,:test do
 #   gem 'rspec'
 #   gem 'rack-test'
